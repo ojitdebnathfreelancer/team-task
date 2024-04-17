@@ -34,7 +34,7 @@ const NavList = async () => {
       </li>
 
       <li>
-        <Link href="/" className="leading-[64px] block">
+        <Link href="/books" className="leading-[64px] block">
           Books
         </Link>
       </li>
