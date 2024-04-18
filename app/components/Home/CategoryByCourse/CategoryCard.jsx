@@ -24,7 +24,7 @@ const CategoryCard = ({ category }) => {
           href={`/category/${category._id}`}
           className="bg-green-600 text-white px-3 py-1 rounded-md font-medium text-lg"
         >
-          Buy Courses
+          Courses
         </Link>
       </div>
     </div>
