@@ -8,7 +8,7 @@ const NavList = async () => {
   );
 
   return (
-    <ul className="flex gap-x-10">
+    <ul className="flex md:gap-x-10 gap-x-5">
       <li className="relative main-link-item">
         <Link className="leading-[64px] block" href="/">
           Courses

@@ -7,8 +7,6 @@ const Books = async ({ searchParams }) => {
     `https://easy-learning-platform.vercel.app/api/v1/books?limit=9&page=${searchParams?.page}`
   );
 
-  console.log(books.data.data);
-
   return (
     <div className="max-w-7xl mx-auto my-5">
       <Pagination total={books?.data?.data.meta.total} />
