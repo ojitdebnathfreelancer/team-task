@@ -9,7 +9,7 @@ const Banner = () => {
         priority
         src="/banner/easy-learning.jpeg"
         alt="banner"
-        className="w-full h-auto"
+        className="w-full md:h-auto h-40 object-cover"
       />
     </div>
   );

@@ -6,13 +6,10 @@ const SingleCourse = async ({ params: { id } }) => {
   const course = await axios(
     `https://easy-learning-platform.vercel.app/api/v1/courses/${id}`
   );
-
   const book = course?.data?.data;
 
-  console.log(book);
-
   return (
-    <div className="max-w-4xl mx-auto bg-white shadow-shadow1 p-2 rounded-md hover:shadow-shadow2 duration-300 flex md:flex-row flex-col gap-x-3 md:gap-y-0 gap-y-4 mt-5">
+    <div className="max-w-4xl lg:mx-auto mx-3 bg-white shadow-shadow1 p-2 rounded-md hover:shadow-shadow2 duration-300 flex md:flex-row flex-col gap-x-3 md:gap-y-0 gap-y-4 mt-5">
       <Image
         src={book?.banner}
         width={500}
