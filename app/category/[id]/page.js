@@ -29,7 +29,6 @@ const Category = async ({ params: { id } }) => {
           <div>
             {subCatagories?.map((category) => (
               <div key={category?._id}>
-                {/* <h1 className="font-bold text-xl my-5">{`${category?.category_id?.title} - ${category?.title}`}</h1> */}
                 <SubCategoryCourses category={category} />
               </div>
             ))}

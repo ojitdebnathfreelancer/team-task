@@ -18,7 +18,10 @@ const SubCategory = async ({ id }) => {
         >
           {subCatagories.map((category) => (
             <li key={category._id}>
-              <Link href={`/${category?._id}`} className="text-nowrap">
+              <Link
+                href={`/course/sub/${category?._id}`}
+                className="text-nowrap"
+              >
                 {category?.title}
               </Link>
             </li>

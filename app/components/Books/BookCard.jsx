@@ -22,10 +22,10 @@ const BookCard = ({ book }) => {
         </div>
         <div className="flex justify-center w-full md:mt-0 mt-2">
           <Link
-            href={book?.pdf_link}
+            href={`/book/${book?._id}`}
             className="bg-green-600 px-3 py-1 rounded text-white font-semibold inline-block"
           >
-            Download PDF
+            See Details
           </Link>
         </div>
       </div>
