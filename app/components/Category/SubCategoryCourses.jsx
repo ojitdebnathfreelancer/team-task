@@ -55,9 +55,9 @@ const SubCategoryCourses = ({ category }) => {
 
   return (
     <>
-      {courses?.data?.data?.data.length > 0 ? (
+      {courses?.data?.data?.data?.length > 0 ? (
         <div className="max-w-7xl mx-auto xl:px-0 px-3">
-          {courses?.data?.data?.data.length > 3 ? (
+          {courses?.data?.data?.data?.length > 3 ? (
             <div>
               <h1 className="font-bold text-xl my-5">{`${category?.category_id?.title} - ${category?.title}`}</h1>
               <Slider {...settings}>

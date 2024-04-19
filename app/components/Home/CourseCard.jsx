@@ -21,7 +21,7 @@ const CourseCard = ({ course }) => {
         <p className="font-medium mt-1">Author: {course?.author}</p>
         <p className="font-medium mt-1">
           Description:{" "}
-          {course?.description.length > 20
+          {course?.description?.length > 20
             ? `${course?.description?.slice(0, 20)}...`
             : course?.description}
         </p>

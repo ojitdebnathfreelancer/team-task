@@ -9,7 +9,7 @@ const page = async ({ params: { id }, searchParams: { page } }) => {
 
   return (
     <>
-      {courses?.data?.data?.data.length > 0 ? (
+      {courses?.data?.data?.data?.length > 0 ? (
         <div className="max-w-7xl mx-auto xl:px-0 px-3 my-5">
           <div className="flex justify-between my-5">
             <h1 className="font-bold text-xl">Courses</h1>

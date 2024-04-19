@@ -12,7 +12,7 @@ const SubCategoryCard = async ({ category }) => {
 
   return (
     <>
-      {subCatagories.length > 0 && (
+      {subCatagories?.length > 0 && (
         <div className="border border-green-600 p-2 rounded">
           <h1 className="text-xl font-bold text-center mb-2">
             {category?.title}

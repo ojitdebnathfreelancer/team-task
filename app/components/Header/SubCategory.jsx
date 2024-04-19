@@ -12,11 +12,11 @@ const SubCategory = async ({ id }) => {
 
   return (
     <>
-      {subCatagories.length > 0 && (
+      {subCatagories?.length > 0 && (
         <ul
           className={`sub-category-link absolute top-[0%] left-[100%] hidden bg-green-600 py-2 px-5 min-w-32 rounded-sm flex-col gap-y-2 duration-500`}
         >
-          {subCatagories.map((category) => (
+          {subCatagories?.map((category) => (
             <li key={category._id}>
               <Link
                 href={`/course/sub/${category?._id}`}

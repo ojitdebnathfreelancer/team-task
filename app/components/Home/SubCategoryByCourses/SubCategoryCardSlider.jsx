@@ -39,7 +39,7 @@ const SubCategoryCardSlider = ({ subCatagories }) => {
 
   return (
     <>
-      {subCatagories.length > 2 ? (
+      {subCatagories?.length > 2 ? (
         <Slider {...settings}>
           {subCatagories.map((cat) => (
             <CategoryCard key={cat?._id} catTyp="sub" category={cat} />

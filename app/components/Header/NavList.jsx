@@ -14,7 +14,7 @@ const NavList = async () => {
           Courses
         </Link>
         {/* course categories menu starts  */}
-        {categories?.data?.data.length > 0 && (
+        {categories?.data?.data?.length > 0 && (
           <ul
             className={`min-link-items-categories absolute top-[100%] hidden left-0 bg-green-600 py-2 px-5 min-w-32 rounded-sm flex-col gap-y-2 duration-500`}
           >
