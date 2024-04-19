@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
+import CardButton from "./CardButton";
 
-const CategoryCard = ({ category }) => {
+const CategoryCard = ({ catTyp = "main", category }) => {
   return (
     <>
       {category && (
@@ -22,12 +22,7 @@ const CategoryCard = ({ category }) => {
             </div>
           </div>
           <div className="flex justify-center mt-2">
-            <Link
-              href={`/category/${category._id}`}
-              className="bg-green-600 text-white px-3 py-1 rounded-md font-medium text-lg"
-            >
-              Courses
-            </Link>
+            <CardButton type={catTyp} category={category} />
           </div>
         </div>
       )}

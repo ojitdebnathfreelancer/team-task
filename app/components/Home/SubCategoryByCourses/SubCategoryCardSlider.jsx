@@ -42,13 +42,13 @@ const SubCategoryCardSlider = ({ subCatagories }) => {
       {subCatagories.length > 2 ? (
         <Slider {...settings}>
           {subCatagories.map((cat) => (
-            <CategoryCard key={cat?._id} category={cat} />
+            <CategoryCard key={cat?._id} catTyp="sub" category={cat} />
           ))}
         </Slider>
       ) : (
         <div className="grid md:grid-cols-2 grid-cols-1 gap-3">
           {subCatagories.map((cat) => (
-            <CategoryCard key={cat?._id} category={cat} />
+            <CategoryCard catTyp="sub" key={cat?._id} category={cat} />
           ))}
         </div>
       )}
