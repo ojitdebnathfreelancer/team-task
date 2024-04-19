@@ -9,7 +9,7 @@ const SubCategoryCardSlider = ({ subCatagories }) => {
     autoplay: true,
     infinite: true,
     speed: 500,
-    pauseOnHover: false,
+    pauseOnHover: true,
     slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
